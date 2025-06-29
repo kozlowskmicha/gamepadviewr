@@ -1,0 +1,59 @@
+/* Base controller body */
+.controller.ps5 {
+  filter: brightness(0.9) saturate(1.1);
+  --controller-color: #0B0E0F; /* dark body */
+  --button-default: #191B1F;
+  --button-pressed: #00E701; /* neon green highlight */
+  --button-text: #ffffff;
+}
+
+/* Buttons */
+.ps5 .button {
+  fill: var(--button-default);
+  transition: fill 0.15s ease-in-out;
+}
+
+.ps5 .button.pressed {
+  fill: var(--button-pressed);
+}
+
+/* D-pad */
+.ps5 .dpad path {
+  fill: var(--button-default);
+}
+.ps5 .dpad.pressed path {
+  fill: var(--button-pressed);
+}
+
+/* Analog sticks */
+.ps5 .stick {
+  fill: #24272C;
+}
+.ps5 .stick.pressed {
+  fill: var(--button-pressed);
+}
+
+/* Triggers and bumpers */
+.ps5 .trigger,
+.ps5 .bumper {
+  fill: var(--button-default);
+}
+.ps5 .trigger.pressed,
+.ps5 .bumper.pressed {
+  fill: var(--button-pressed);
+}
+
+/* Touchpad */
+.ps5 .touchpad {
+  fill: #191B1F;
+  stroke: #00E701;
+  stroke-width: 1px;
+}
+
+/* Optional: glow effect on press */
+.ps5 .button.pressed,
+.ps5 .stick.pressed,
+.ps5 .trigger.pressed,
+.ps5 .dpad.pressed path {
+  filter: drop-shadow(0 0 6px #00E701);
+}
