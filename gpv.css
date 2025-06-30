@@ -1,6 +1,9 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
     background: url(Black_SkinNo_Buttons.png);
+    background-color: #0a0a0a; /* Matte black base */
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14 inset;
+  animation: neonPulse 2s infinite alternate;
     height: 700px;
     width: 1200px;
     /*    margin-left: -403px;
@@ -17,6 +20,9 @@
     position: absolute;
     left: 299px;
     top: 38px;
+    border: 2px solid #39ff14 !important;
+  background-color: #111 !important;
+  box-shadow: 0 0 6px #39ff14;
 }
 
 .ds4 .trigger {
@@ -40,6 +46,8 @@
     height: 45px;
     background: url(Bumper.png) no-repeat;
     opacity: 0;
+     border: 1px solid #39ff14 !important;
+  box-shadow: 0 0 4px #39ff14;
 }
 
 .ds4 .bumpers {
@@ -71,6 +79,9 @@
     position: absolute;
     left: 422px;
     top: 74px;
+    background-color: #000 !important;
+  border: 2px solid #39ff14 !important;
+  box-shadow: 0 0 6px #39ff14;
 }
 
 .ds4 .touchpad.pressed {
@@ -83,6 +94,7 @@
     position: absolute;
     left: 546px;
     bottom: 264px;
+    filter: drop-shadow(0 0 5px #39ff14);
 }
 
 .ds4 .meta.pressed {
@@ -115,6 +127,8 @@ background-position: 0 -70px;
     width: 26px;
     height: 43px;
     opacity: 0;
+     border: 1px solid #39ff14 !important;
+  box-shadow: 0 0 4px #39ff14;
 }
 .ds4 .start {
     position: absolute;
@@ -194,6 +208,8 @@ background-position: 0 -70px;
     background: url(Sticks.png);
     height: 94px;
     width: 94px;
+    border: 2px solid #39ff14 !important;
+  box-shadow: 0 0 6px #39ff14;
 }
 
 .ds4 .stick.pressed.left {
@@ -277,60 +293,3 @@ background-position: 0 -70px;
 /*END PS4 White Controller Styling*/
 
 
-/* === Neon Glow Overlay for PS5 Classic Black === */
-.ds4 {
-  background-color: #0a0a0a; /* Matte black base */
-  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14 inset;
-  animation: neonPulse 2s infinite alternate;
-}
-
-/* Triggers */
-.ds4 .trigger {
-  border: 2px solid #39ff14 !important;
-  background-color: #111 !important;
-  box-shadow: 0 0 6px #39ff14;
-}
-
-/* Bumpers */
-.ds4 .bumper {
-  border: 1px solid #39ff14 !important;
-  box-shadow: 0 0 4px #39ff14;
-}
-
-/* Touchpad */
-.ds4 .touchpad {
-  background-color: #000 !important;
-  border: 2px solid #39ff14 !important;
-  box-shadow: 0 0 6px #39ff14;
-}
-
-/* Meta / PS Logo */
-.ds4 .meta {
-  filter: drop-shadow(0 0 5px #39ff14);
-}
-
-/* Buttons (ABXY) */
-.ds4 .abxy .button, .ds4 .abxy .a, .ds4 .abxy .b, .ds4 .abxy .x, .ds4 .abxy .y {
-  background-color: #111 !important;
-  border: 2px solid #39ff14 !important;
-  box-shadow: 0 0 6px #39ff14;
-}
-
-/* Sticks */
-.ds4 .stick {
-  border: 2px solid #39ff14 !important;
-  box-shadow: 0 0 6px #39ff14;
-}
-
-/* D-Pad Faces */
-.ds4 .dpad .face {
-  background-color: #111 !important;
-  border: 2px solid #39ff14 !important;
-  box-shadow: 0 0 5px #39ff14;
-}
-
-/* Back & Start */
-.ds4 .back, .ds4 .start {
-  border: 1px solid #39ff14 !important;
-  box-shadow: 0 0 4px #39ff14;
-}
