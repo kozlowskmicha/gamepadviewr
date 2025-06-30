@@ -334,13 +334,3 @@ background-position: 0 -70px;
   border: 1px solid #39ff14 !important;
   box-shadow: 0 0 4px #39ff14;
 }
-
-/* Pulsing Animation */
-@keyframes neonPulse {
-  0%, 100% {
-    box-shadow: 0 0 8px #39ff14;
-  }
-  50% {
-    box-shadow: 0 0 16px #39ff14;
-  }
-}
