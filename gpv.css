@@ -1,59 +1,346 @@
-/* Base controller body */
-.controller.ps5 {
-  filter: brightness(0.9) saturate(1.1);
-  --controller-color: #0B0E0F; /* dark body */
-  --button-default: #191B1F;
-  --button-pressed: #00E701; /* neon green highlight */
-  --button-text: #ffffff;
+/*BEGIN PS4 Controller Styling*/
+.controller.ds4 {
+    background: url(Black_SkinNo_Buttons.png);
+    height: 700px;
+    width: 1200px;
+    /*    margin-left: -403px;
+        margin-top: -280px;*/
+}
+-
+.ds4.disconnected div {
+    display: none;
 }
 
-/* Buttons */
-.ps5 .button {
-  fill: var(--button-default);
-  transition: fill 0.15s ease-in-out;
+.ds4 .triggers {
+    width: 598px;
+    height: 90px;
+    position: absolute;
+    left: 299px;
+    top: 38px;
 }
 
-.ps5 .button.pressed {
-  fill: var(--button-pressed);
+.ds4 .trigger {
+    width: 99px;
+    height: 100%;
+    background: url(Trigger_Pressed.png);
+    opacity: 0;
 }
 
-/* D-pad */
-.ps5 .dpad path {
-  fill: var(--button-default);
-}
-.ps5 .dpad.pressed path {
-  fill: var(--button-pressed);
+.ds4 .trigger.left {
+    float: left;
 }
 
-/* Analog sticks */
-.ps5 .stick {
-  fill: #24272C;
-}
-.ps5 .stick.pressed {
-  fill: var(--button-pressed);
+.ds4 .trigger.right {
+    float: right;
+    background-position-x: 99px;
 }
 
-/* Triggers and bumpers */
-.ps5 .trigger,
-.ps5 .bumper {
-  fill: var(--button-default);
+.ds4 .bumper {
+    width: 200px;
+    height: 45px;
+    background: url(Bumper.png) no-repeat;
+    opacity: 0;
 }
-.ps5 .trigger.pressed,
-.ps5 .bumper.pressed {
-  fill: var(--button-pressed);
+
+.ds4 .bumpers {
+    position: absolute;
+    width: 672px;
+    height: 23px;
+    left: 263px;
+    top: 132px;
+}
+
+.ds4 .bumper.pressed {
+    opacity: 0.8;
+}
+
+.ds4 .bumper.left {
+    /* -webkit-transform: rotateY(180deg); */
+    /* transform: rotateY(180deg); */
+    float: left;
+}
+
+.ds4 .bumper.right {
+    float: right;
+    transform: rotateY(180deg);
+}
+
+.ds4 .touchpad {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    left: 422px;
+    top: 74px;
+}
+
+.ds4 .touchpad.pressed {
+    background: url(Touchpad.png) no-repeat center;
+}
+
+.ds4 .meta {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 546px;
+    bottom: 264px;
+}
+
+.ds4 .meta.pressed {
+    background: url(Home.png) no-repeat center;
+}
+
+/*Not needed, but I like keeping them here for posterity*/
+.ds4 .p0{
+background-position: 0 -6px;
+}
+.ds4 .p1{
+background-position: 0 -28px;
+}
+.ds4 .p2{
+background-position: 0 -49px;
+}
+.ds4 .p3{
+background-position: 0 -70px;
+}*/
+.ds4 .arrows {
+    position: absolute;
+    width: 352px;
+    height: 46px;
+    top: 142px;
+    left: 227px;
+}
+
+.ds4 .back, .ds4 .start {
+    background: url(Select.png);
+    width: 26px;
+    height: 43px;
+    opacity: 0;
+}
+.ds4 .start {
+    position: absolute;
+    left: 546px;
+    bottom: -30px;
+}
+.ds4 .back {
+    position: absolute;
+    left: 170px;
+    bottom: -30px;
+}
+
+
+.ds4 .back.pressed, .ds4 .start.pressed {
+    /* background-position-y: -21px; */
+    /* margin-top: 2px; */
+    opacity: 1;
+}
+
+.ds4 .back {
+    float: left;
+    /* width: 28px; */
+}
+
+.ds4 .start {
+    float: right;
+    /* width: 28px; */
+    background-position: 0px 0;
+}
+
+.ds4 .abxy {
+    position: absolute;
+    width: 170px;
+    height: 171px;
+    top: 200px;
+    left: 762px;
+}
+
+.ds4 .button.pressed {
+    background-position-y: 55px;
+    /* margin-top: 5px; */
+}
+
+.ds4 .a {
+    background-position: 0 0;
+    bottom: 0px;
+    left: 58px;
+}
+
+.ds4 .b {
+    background-position: -57px 0;
+    top: 57px;
+    right: -3px;
+}
+
+.ds4 .x {
+    background-position: -113px 0;
+    top: 57px;
+}
+
+.ds4 .y {
+    background-position: 55px 0;
+    left: 58px;
+    bottom: 119px;
+}
+
+.ds4 .sticks {
+    position: absolute;
+    width: 364px;
+    height: 105px;
+    top: 348px;
+    left: 422px;
+}
+
+.ds4 .stick {
+    position: absolute;
+    background: url(Sticks.png);
+    height: 94px;
+    width: 94px;
+}
+
+.ds4 .stick.pressed.left {
+    background-position-x: -96px;
+}
+
+.ds4 .stick.pressed.right {
+    background-position-x: -192px;
+}
+
+.ds4 .stick.left {
+    top: 0;
+    left: 0;
+}
+
+.ds4 .stick.right {
+    top: calc(100% - 105px);
+    left: calc(100% - 105px);
+}
+
+.ds4 .dpad {
+    position: absolute;
+    width: 125px;
+    height: 126px;
+    top: 220px;
+    left: 286px;
+}
+
+.ds4 .face.up, .ds4 .face.down {
+    width: 36px;
+    height: 52px;
+}
+
+.ds4 .face.left, .ds4 .face.right {
+    width: 52px;
+    height: 36px;
+}
+
+.ds4 .face.up {
+    left: 44px;
+    top: 0;
+    background-position: -37px 0px;
+}
+
+.ds4 .face.down {
+    left: 44px;
+    bottom: 0;
+    background-position: 0px 0;
+}
+
+.ds4 .face.left {
+    top: 45px;
+    left: 0;
+    background-position: 104px 0;
+}
+
+.ds4 .face.right {
+    top: 45px;
+    right: 0px;
+    background-position: 52px 0;
+}
+
+.ds4 .face.pressed {
+    /* margin-top: 5px; */
+    background-position-y: 52px;
+}
+
+.ds4.half {
+    margin-top: -300px;
+}
+
+/*END PS4 Controller Styling*/
+
+/*BEGIN PS4 White Controller Styling*/
+.ds4.white .back, .ds4 .start {
+    background-image: url(Start.png);
+    width: 26px;
+    height: 43px;
+}
+
+/*END PS4 White Controller Styling*/
+
+
+/* === Neon Glow Overlay for PS5 Classic Black === */
+.ds4 {
+  background-color: #0a0a0a; /* Matte black base */
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14 inset;
+  animation: neonPulse 2s infinite alternate;
+}
+
+/* Triggers */
+.ds4 .trigger {
+  border: 2px solid #39ff14 !important;
+  background-color: #111 !important;
+  box-shadow: 0 0 6px #39ff14;
+}
+
+/* Bumpers */
+.ds4 .bumper {
+  border: 1px solid #39ff14 !important;
+  box-shadow: 0 0 4px #39ff14;
 }
 
 /* Touchpad */
-.ps5 .touchpad {
-  fill: #191B1F;
-  stroke: #00E701;
-  stroke-width: 1px;
+.ds4 .touchpad {
+  background-color: #000 !important;
+  border: 2px solid #39ff14 !important;
+  box-shadow: 0 0 6px #39ff14;
 }
 
-/* Optional: glow effect on press */
-.ps5 .button.pressed,
-.ps5 .stick.pressed,
-.ps5 .trigger.pressed,
-.ps5 .dpad.pressed path {
-  filter: drop-shadow(0 0 6px #00E701);
+/* Meta / PS Logo */
+.ds4 .meta {
+  filter: drop-shadow(0 0 5px #39ff14);
+}
+
+/* Buttons (ABXY) */
+.ds4 .abxy .button, .ds4 .abxy .a, .ds4 .abxy .b, .ds4 .abxy .x, .ds4 .abxy .y {
+  background-color: #111 !important;
+  border: 2px solid #39ff14 !important;
+  box-shadow: 0 0 6px #39ff14;
+}
+
+/* Sticks */
+.ds4 .stick {
+  border: 2px solid #39ff14 !important;
+  box-shadow: 0 0 6px #39ff14;
+}
+
+/* D-Pad Faces */
+.ds4 .dpad .face {
+  background-color: #111 !important;
+  border: 2px solid #39ff14 !important;
+  box-shadow: 0 0 5px #39ff14;
+}
+
+/* Back & Start */
+.ds4 .back, .ds4 .start {
+  border: 1px solid #39ff14 !important;
+  box-shadow: 0 0 4px #39ff14;
+}
+
+/* Pulsing Animation */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 8px #39ff14;
+  }
+  50% {
+    box-shadow: 0 0 16px #39ff14;
+  }
 }
