@@ -292,4 +292,12 @@ background-position: 0 -70px;
 
 /*END PS4 White Controller Styling*/
 
-
+/* Pulsing Animation */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 8px #39ff14;
+  }
+  50% {
+    box-shadow: 0 0 16px #39ff14;
+  }
+}
