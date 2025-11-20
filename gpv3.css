@@ -110,35 +110,17 @@ body {
 
 
 /* --- START / BACK / SELECT --- */
-.controller.custom .button.back,
-.controller.custom .button.start,
-.controller.custom .button.select {
-    background: url(https://philipbry.github.io/PrAfLDQ.png) !important;
-    width: 23px !important;
-    height: 37px !important;
-    position: absolute;
+.controller.custom .back, .controller.custom .start {
+    background: url(https://philipbry.github.io/PrAfLDQ.png);
+    width: 23px;
+    height: 37px;
+    margin-top: -8px;
+    margin-left: 5px;
     opacity: 0;
-}
-
-.controller.custom .button.back,
-.controller.custom .button.select {
-    left: 280px;
-    top: 200px;
-    background-position: 0 0 !important;
-}
-
-.controller.custom .button.start {
-    left: 491px;
-    top: 200px;
-    background-position: -23px 0 !important;
-}
-
-.controller.custom .button.back.pressed,
-.controller.custom .button.start.pressed,
-.controller.custom .button.select.pressed {
-    opacity: 1 !important;
-    background-position-y: 0 !important;
-}
+} .controller.custom .start {
+    background-position: 23px 0;
+    margin-right: 16px;
+    float: right;
 
 .controller.custom .triggers { width: 593px; height: 97px; left: 100px; position: absolute; }
 .controller.custom .trigger { width: 100px; height: 97px; opacity: 0; position: absolute; background: url(https://philipbry.github.io/KcAyIZw.png); }
