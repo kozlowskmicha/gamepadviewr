@@ -1,6 +1,6 @@
 * Base controller */
 .controller.custom {
-    background: url('https://kozlowskmicha.github.io/gamepadviewr/ZDjUbh0.png');
+    background: url('ZDjUbh0.png'); !important
     width: 794px;
     height: 639px;
     background-size: 100% 100%;
