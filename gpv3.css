@@ -6,7 +6,8 @@ body {
 
 /* Root controller */
 .controller.custom {
-    background: url('https://kozlowskmicha.github.io/gamepadviewr/ZDjUbh0.png')
+    background: url('https://kozlowskmicha.github.io/gamepadviewer/ZDjUbh0.png') no-repeat center center !important;
+    background-size: contain !important;
     width: 794px;
     height: 639px;
     margin: 0;
