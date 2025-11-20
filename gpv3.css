@@ -88,9 +88,9 @@ body {
 
 /* Bumpers and triggers */
 .controller.custom .bumpers {
-    width: 620px;
+    width: 590px;
     height: 36px;
-    left: 90px;
+    left: 100px;
     top: 98px;
     position: absolute;
 }
