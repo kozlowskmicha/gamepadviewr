@@ -1,16 +1,24 @@
 /* Body setup */
 body {
     background-color: RGBA(0, 0, 0, 0);
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* fill viewport vertically */
 }
 
-/* Main controller background (your GitHub) */
+/* Main controller container */
 .controller.custom {
     background: url('https://kozlowskmicha.github.io/gamepadviewr/ZDjUbh0.png') no-repeat center center;
     width: 794px;
     height: 639px;
     position: relative;
+    display: block;
+    margin: 0 auto;
+    transform: scale(0.8); /* scale down to fit screen */
+    transform-origin: top center;
 }
 
 /* Sticks container */
@@ -149,4 +157,9 @@ body {
 }
 .controller.custom .touchpad.pressed {
     background: url('https://philipbry.github.io/Gnd106J.png') no-repeat center center;
+}
+
+/* Stick movement using GamepadViewer variables */
+.controller.custom .stick.moving {
+    transform: translate(var(--x, 0px), var(--y, 0px));
 }
