@@ -1,180 +1,166 @@
-body {
-    background-color: rgba(0, 0, 0, 0);
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-/* Root controller */
+* Base controller */
 .controller.custom {
-    background: url('ZDjUbh0.png')!important;
+    background: url('https://kozlowskmicha.github.io/gamepadviewr/ZDjUbh0.png');
     width: 794px;
     height: 639px;
-    margin: 0;
+    background-size: 100% 100%;
 }
 
-/* Analog sticks */
-.controller.custom .sticks {
-    width: 367px;
-    height: 95px;
-    left: 222px;
-    top: 294px;
-    position: absolute;
-}
-
+/* ==========================
+   STICKS
+   ========================== */
 .controller.custom .stick {
-    background: url(https://philipbry.github.io/3sBwghP.png);
+    background: url('https://philipbry.github.io/3sBwghP.png');
     width: 95px;
     height: 95px;
-    position: absolute;
 }
 
-.controller.custom .stick.pressed.left,
-.controller.custom .stick.pressed.right {
+.controller.custom .stick.left {
+    position: absolute;
+    top: 330px;
+    left: 170px;
+}
+.controller.custom .stick.right {
+    position: absolute;
+    top: 330px;
+    left: 500px;
+}
+
+.controller.custom .stick.pressed {
     background-position: -95px 0;
 }
 
-.controller.custom .stick.right {
-    top: 0;
-    left: 255px;
-}
-
-/* ABXY buttons */
-.controller.custom .abxy {
-    width: 181px;
-    height: 181px;
-    left: 559px;
-    top: 152px;
-    position: absolute;
-}
-
+/* ==========================
+   ABXY CLUSTER
+   ========================== */
 .controller.custom .button {
-    background: url(https://philipbry.github.io/HdHbA0t.png);
+    background: url('https://philipbry.github.io/HdHbA0t.png');
     width: 54px;
     height: 54px;
     position: absolute;
+}
+
+.controller.custom .button.south { /* X */
+    top: 355px;
+    left: 620px;
+    background-position: 0 0;
+}
+.controller.custom .button.east { /* Circle */
+    top: 300px;
+    left: 675px;
+    background-position: -54px 0;
+}
+.controller.custom .button.west { /* Square */
+    top: 300px;
+    left: 560px;
+    background-position: -108px 0;
+}
+.controller.custom .button.north { /* Triangle */
+    top: 245px;
+    left: 620px;
+    background-position: -162px 0;
 }
 
 .controller.custom .button.pressed {
     background-position-y: -55px;
 }
 
-/* Individual buttons */
-.controller.custom .a { left: 59px; top: 116px; background-position: 0 0; }
-.controller.custom .b { left: 118px; top: 59px; background-position: -54px 0; }
-.controller.custom .x { left: 0px; top: 58px; background-position: -108px 0; }
-.controller.custom .y { left: 59px; top: 0px; background-position: -162px 0; }
-
-/* D-pad */
+/* ==========================
+   DPAD
+   ========================== */
 .controller.custom .dpad {
+    position: absolute;
     width: 125px;
     height: 126px;
-    top: 171px;
-    left: 82px;
-    position: absolute;
+    top: 250px;
+    left: 110px;
 }
 
-/* Faces for D-pad */
 .controller.custom .face {
+    background: url('https://philipbry.github.io/548MWGT.png');
     position: absolute;
-    background: url(https://philipbry.github.io/548MWGT.png);
-}
-.controller.custom .face.up, .controller.custom .face.down { width: 44px; height: 58px; }
-.controller.custom .face.left, .controller.custom .face.right { width: 57px; height: 44px; }
-.controller.custom .face.up { left: 45px; top: 0; background-position: 0 0; }
-.controller.custom .face.down { left: 45px; bottom: -7px; background-position: -44px 0; }
-.controller.custom .face.left { top: 45px; left: 0; background-position: -88px 0; }
-.controller.custom .face.right { top: 44px; right: -7px; background-position: -144px 0; }
-.controller.custom .face.pressed { background-position-y: 58px; }
-
-/* Bumpers */
-.controller.custom .bumpers {
-    width: 620px;
-    height: 36px;
-    position: absolute;
-    left: 90px;
-    top: 98px;
 }
 
-.controller.custom .bumper {
-    width: 114px;
-    height: 36px;
-    position: absolute;
-    opacity: 0;
-    background: url('https://philipbry.github.io/wijYAzG.png') no-repeat;
+.controller.custom .face.up     { width: 44px; height: 58px; left: 45px; top: 0; background-position:   0 0; }
+.controller.custom .face.down   { width: 44px; height: 58px; left: 45px; top: 70px; background-position: -44px 0; }
+.controller.custom .face.left   { width: 57px; height: 44px; left: 0;   top: 41px; background-position: -88px 0; }
+.controller.custom .face.right  { width: 57px; height: 44px; left: 70px; top: 41px; background-position: -144px 0; }
+
+.controller.custom .face.pressed {
+    background-position-y: 58px;
 }
 
-.controller.custom .bumper.pressed {
-    opacity: 1;
-}
-
-.controller.custom .bumper.right {
-    right: 6px; /* Adjust to align with skin */
-}
-
-/* Triggers */
-.controller.custom .triggers {
-    width: 593px;
-    height: 97px;
-    position: absolute;
-    left: 100px;
-    top: 0; /* Adjust based on skin */
-}
-
+/* ==========================
+   TRIGGERS (L2/R2)
+   ========================== */
 .controller.custom .trigger {
+    background: url('https://philipbry.github.io/KcAyIZw.png');
     width: 100px;
     height: 97px;
     position: absolute;
-    opacity: 0;
-    background: url('https://philipbry.github.io/KcAyIZw.png') no-repeat;
 }
 
 .controller.custom .trigger.left {
-    left: 0px; /* Position left trigger */
+    top: -10px;
+    left: 115px;
+    background-position: 0 0;
 }
 
 .controller.custom .trigger.right {
-    right: 0px; /* Position right trigger correctly */
+    top: -10px;
+    left: 575px;
     background-position: -100px 0;
-    transform: rotateY(0);
 }
 
+/* Make them appear when pressed */
 .controller.custom .trigger.pressed {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
-/* Start & Back */
-.controller.custom .start,
-.controller.custom .back {
+/* ==========================
+   BUMPERS (L1/R1)
+   ========================== */
+.controller.custom .bumper {
+    background: url('https://philipbry.github.io/wijYAzG.png');
+    width: 114px;
+    height: 36px;
+    position: absolute;
+}
+
+.controller.custom .bumper.left {
+    top: 55px;
+    left: 125px;
+}
+
+.controller.custom .bumper.right {
+    top: 55px;
+    left: 560px;
+}
+
+/* ==========================
+   START / BACK
+   ========================== */
+/* GamepadViewer uses: 
+   .button.start 
+   .button.back 
+*/
+
+.controller.custom .button.start {
+    background: url('https://philipbry.github.io/PrAfLDQ.png');
     width: 23px;
     height: 37px;
     position: absolute;
-    opacity: 0;
-    background: url('https://philipbry.github.io/PrAfLDQ.png') no-repeat;
+    top: 230px;
+    left: 445px;
+    background-position: -23px 0;
 }
 
-.controller.custom .start.pressed,
-.controller.custom .back.pressed {
-    opacity: 1;
-}
-
-.controller.custom .start {
-    right: 16px; /* adjust to your image */
-    background-position: 23px 0;
-}
-
-.controller.custom .back {
-    left: 5px; /* adjust to your image */
-}
-
-/* Touchpad */
-.controller.custom .touchpad {
-    width: 320px;
-    height: 167px;
+.controller.custom .button.back {
+    background: url('https://philipbry.github.io/PrAfLDQ.png');
+    width: 23px;
+    height: 37px;
     position: absolute;
-    left: 237px;
-    top: 97px;
-}
-
-.controller.custom .touchpad.pressed {
-    background: url('https://philipbry.github.io/Gnd106J.png') no-repeat;
+    top: 230px;
+    left: 330px;
+    background-position: 0 0;
 }
