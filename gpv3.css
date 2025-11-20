@@ -121,7 +121,7 @@ body {
     background-position: 23px 0;
     margin-right: 16px;
     float: right;
-
+}
 .controller.custom .triggers { width: 593px; height: 97px; left: 100px; position: absolute; }
 .controller.custom .trigger { width: 100px; height: 97px; opacity: 0; position: absolute; background: url(https://philipbry.github.io/KcAyIZw.png); }
 .controller.custom .trigger.left {
