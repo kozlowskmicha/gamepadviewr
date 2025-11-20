@@ -87,9 +87,49 @@ body {
 .controller.custom .face.pressed { background-position-y: 58px; }
 
 /* Bumpers and triggers */
-.controller.custom .bumpers { width: 620px; height: 36px; left: 90px; top: 98px; position: absolute; }
-.controller.custom .bumper { width: 114px; height: 36px; opacity: 0; position: absolute; background: url(https://philipbry.github.io/wijYAzG.png); }
-.controller.custom .bumper.right { margin-right: 6px; }
+.controller.custom .bumper {
+    background: url(https://philipbry.github.io/wijYAzG.png);
+    width: 114px;
+    height: 36px;
+    opacity: 0;
+    position: absolute;
+}
+
+.controller.custom .bumper.left {
+    background-position: 0 0 !important;
+}
+
+.controller.custom .bumper.right {
+    background-position: -114px 0 !important;
+}
+
+.controller.custom .bumper.pressed {
+    opacity: 1 !important;
+}
+
+
+/* --- START / BACK --- */
+.controller.custom .button.back,
+.controller.custom .button.start {
+    background: url(https://philipbry.github.io/PrAfLDQ.png);
+    width: 23px;
+    height: 37px;
+    position: absolute;
+    opacity: 0;
+}
+
+.controller.custom .button.back {
+    background-position: 0 0;
+}
+
+.controller.custom .button.start {
+    background-position: -23px 0;
+}
+
+.controller.custom .button.back.pressed,
+.controller.custom .button.start.pressed {
+    opacity: 1 !important;
+}
 
 .controller.custom .triggers { width: 593px; height: 97px; left: 100px; position: absolute; }
 .controller.custom .trigger { width: 100px; height: 97px; opacity: 0; position: absolute; background: url(https://philipbry.github.io/KcAyIZw.png); }
