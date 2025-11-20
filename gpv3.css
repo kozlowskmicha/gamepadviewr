@@ -96,10 +96,14 @@ body {
 }
 
 .controller.custom .bumper.left {
+    left: 135px;
+    top: 40px;
     background-position: 0 0 !important;
 }
 
 .controller.custom .bumper.right {
+    left: 545px;
+    top: 40px;
     background-position: -114px 0 !important;
 }
 
@@ -119,10 +123,14 @@ body {
 }
 
 .controller.custom .button.back {
+    left: 280px;
+    top: 200px;
     background-position: 0 0;
 }
 
 .controller.custom .button.start {
+    left: 491px;
+    top: 200px;
     background-position: -23px 0;
 }
 
