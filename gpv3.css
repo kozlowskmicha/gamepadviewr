@@ -5,7 +5,7 @@ body {
 }
 
 /* Root controller */
-.gamepad.ps4 {
+.controller.custom {
     background: url(https://philipbry.github.io/ZDjUbh0.png);
     width: 794px;
     height: 639px;
@@ -13,7 +13,7 @@ body {
 }
 
 /* Analog sticks */
-.gamepad.ps4 .sticks {
+.controller.custom .sticks {
     width: 367px;
     height: 95px;
     left: 222px;
@@ -21,25 +21,25 @@ body {
     position: absolute;
 }
 
-.gamepad.ps4 .stick {
+.controller.custom .stick {
     background: url(https://philipbry.github.io/3sBwghP.png);
     width: 95px;
     height: 95px;
     position: absolute;
 }
 
-.gamepad.ps4 .stick.pressed.left,
-.gamepad.ps4 .stick.pressed.right {
+.controller.custom .stick.pressed.left,
+.controller.custom .stick.pressed.right {
     background-position: -95px 0;
 }
 
-.gamepad.ps4 .stick.right {
+.controller.custom .stick.right {
     top: 0;
     left: 255px;
 }
 
 /* ABXY buttons */
-.gamepad.ps4 .abxy {
+.controller.custom .abxy {
     width: 181px;
     height: 181px;
     left: 559px;
@@ -47,25 +47,25 @@ body {
     position: absolute;
 }
 
-.gamepad.ps4 .button {
+.controller.custom .button {
     background: url(https://philipbry.github.io/HdHbA0t.png);
     width: 54px;
     height: 54px;
     position: absolute;
 }
 
-.gamepad.ps4 .button.pressed {
+.controller.custom .button.pressed {
     background-position-y: -55px;
 }
 
 /* Individual buttons */
-.gamepad.ps4 .a { left: 59px; top: 116px; background-position: 0 0; }
-.gamepad.ps4 .b { left: 118px; top: 59px; background-position: -54px 0; }
-.gamepad.ps4 .x { left: 0px; top: 58px; background-position: -108px 0; }
-.gamepad.ps4 .y { left: 59px; top: 0px; background-position: -162px 0; }
+.controller.custom .a { left: 59px; top: 116px; background-position: 0 0; }
+.controller.custom .b { left: 118px; top: 59px; background-position: -54px 0; }
+.controller.custom .x { left: 0px; top: 58px; background-position: -108px 0; }
+.controller.custom .y { left: 59px; top: 0px; background-position: -162px 0; }
 
 /* D-pad */
-.gamepad.ps4 .dpad {
+.controller.custom .dpad {
     width: 125px;
     height: 126px;
     top: 171px;
@@ -74,27 +74,27 @@ body {
 }
 
 /* Faces for D-pad */
-.gamepad.ps4 .face {
+.controller.custom .face {
     position: absolute;
     background: url(https://philipbry.github.io/548MWGT.png);
 }
-.gamepad.ps4 .face.up, .gamepad.ps4 .face.down { width: 44px; height: 58px; }
-.gamepad.ps4 .face.left, .gamepad.ps4 .face.right { width: 57px; height: 44px; }
-.gamepad.ps4 .face.up { left: 45px; top: 0; background-position: 0 0; }
-.gamepad.ps4 .face.down { left: 45px; bottom: -7px; background-position: -44px 0; }
-.gamepad.ps4 .face.left { top: 45px; left: 0; background-position: -88px 0; }
-.gamepad.ps4 .face.right { top: 44px; right: -7px; background-position: -144px 0; }
-.gamepad.ps4 .face.pressed { background-position-y: 58px; }
+.controller.custom .face.up, .controller.custom .face.down { width: 44px; height: 58px; }
+.controller.custom .face.left, .controller.custom .face.right { width: 57px; height: 44px; }
+.controller.custom .face.up { left: 45px; top: 0; background-position: 0 0; }
+.controller.custom .face.down { left: 45px; bottom: -7px; background-position: -44px 0; }
+.controller.custom .face.left { top: 45px; left: 0; background-position: -88px 0; }
+.controller.custom .face.right { top: 44px; right: -7px; background-position: -144px 0; }
+.controller.custom .face.pressed { background-position-y: 58px; }
 
 /* Bumpers and triggers */
-.gamepad.ps4 .bumpers { width: 620px; height: 36px; left: 90px; top: 98px; position: absolute; }
-.gamepad.ps4 .bumper { width: 114px; height: 36px; opacity: 0; position: absolute; background: url(https://philipbry.github.io/wijYAzG.png); }
-.gamepad.ps4 .bumper.right { margin-right: 6px; }
+.controller.custom .bumpers { width: 620px; height: 36px; left: 90px; top: 98px; position: absolute; }
+.controller.custom .bumper { width: 114px; height: 36px; opacity: 0; position: absolute; background: url(https://philipbry.github.io/wijYAzG.png); }
+.controller.custom .bumper.right { margin-right: 6px; }
 
-.gamepad.ps4 .triggers { width: 593px; height: 97px; left: 100px; position: absolute; }
-.gamepad.ps4 .trigger { width: 100px; height: 97px; opacity: 0; position: absolute; background: url(https://philipbry.github.io/KcAyIZw.png); }
-.gamepad.ps4 .trigger.right { background-position: -100px 0; transform: rotateY(0); }
+.controller.custom .triggers { width: 593px; height: 97px; left: 100px; position: absolute; }
+.controller.custom .trigger { width: 100px; height: 97px; opacity: 0; position: absolute; background: url(https://philipbry.github.io/KcAyIZw.png); }
+.controller.custom .trigger.right { background-position: -100px 0; transform: rotateY(0); }
 
 /* Touchpad */
-.gamepad.ps4 .touchpad { width: 320px; height: 167px; left: 237px; top: 97px; position: absolute; }
-.gamepad.ps4 .touchpad.pressed { background: url(https://philipbry.github.io/Gnd106J.png); }
+.controller.custom .touchpad { width: 320px; height: 167px; left: 237px; top: 97px; position: absolute; }
+.controller.custom .touchpad.pressed { background: url(https://philipbry.github.io/Gnd106J.png); }
